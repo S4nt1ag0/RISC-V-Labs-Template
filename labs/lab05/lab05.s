@@ -45,8 +45,8 @@ LOOP_SWAP:   #copia 4 elementos
     sb t2, -1(t6)
     sb t1, 0(t6)
 
-    addi t0, t0, 2  #movendo o ponteiro inicial para avançar 2 casa
-    addi t6, t6, -2 #movendo o ponteiro final para recuar 2 casas
+    addi t0, t0, 6  #movendo o ponteiro inicial para avançar 6 casa
+    addi t6, t6, -6 #movendo o ponteiro final para recuar 6 casas
 
     bgeu t0, t6, EXIT
     j LOOP_SWAP
