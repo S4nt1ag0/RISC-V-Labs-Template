@@ -3,12 +3,12 @@
 extern int func(char* input);
 
 int main(){
-    char input[] = "10111";
+    char input[] = "castelo animado é meu filme favorito do studio ghibli";
     int result;
 
     result = func(input);
 
-    printf("\nstring de tamanho: %d\n", result);
+    printf("string de tamanho: %d\n", result);
 
     return 0;
 }
