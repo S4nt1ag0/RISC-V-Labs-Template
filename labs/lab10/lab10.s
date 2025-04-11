@@ -21,7 +21,7 @@ M_BIGGER_0_N_EQUALS_0:
     sd s0, 0(sp)     #salva o valor de m
 
 
-    #a0 = A(m-1,n)
+    #a0 = A(m-1,1)
     addi a0, s0, -1
     li a1, 1
     call func
@@ -39,8 +39,6 @@ M_BIGGER_0_N_BIGGER_0:
     sd s1, 8(sp)     #salva o valor de n
     sd s0, 0(sp)     #salva o valor de m
 
-    mv s0, a0 #salva o valor de m
-
     #s1 = A(m, n-1)
     addi a1, s1, -1  #a1 = n-1
     call func
@@ -51,7 +49,6 @@ M_BIGGER_0_N_BIGGER_0:
     addi a0, s0, -1 #a0 = m-1
     mv a1, s1 
     call func
-    mv s0, a0 
 
     ld ra, 16(sp)   #restaura o endereço de retorno para o registrador
     ld s1, 8(sp)    #restaura o valor de n
