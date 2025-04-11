@@ -18,7 +18,7 @@ LOOP_GET_ARRAY_SIZE:
 
 
 PRINT_STRING:
-    addi sp, sp, -16      # reserva espaço na pilha
+    addi sp, sp, -8      # reserva espaço na pilha
     sw ra, 0(sp)          # salva endereço de retorno
 
     sub a2, t6, t0        # carrega tamanho da string (antes do ponteiro)
@@ -36,7 +36,7 @@ PRINT_STRING:
     ecall
 
     lw ra, 0(sp)          
-    addi sp, sp, 16       
+    addi sp, sp, 8       
 
     sub a0, t6, t0         # a0 = tamanho da string (retorno para C)
     ret
