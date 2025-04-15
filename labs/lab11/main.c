@@ -3,11 +3,11 @@
 extern void func(int* A, int* B, int* C, int m, int p, int n);
 
 int main() {
-    int m = 2, p = 2, n = 2;
+    int m = 2, p = 3, n = 4;
 
-    int A[4] = {1, 2, 3, 4};   
-    int B[4] = {5, 6, 7, 8};   
-    int C[4] = {0};            
+    int A[6] = {1, 2, 5, 3, 4, 7};   
+    int B[12] = {5, 6, 7, 8,0, 1, 2, 3,4,  5, 4, 7};   
+    int C[8] = {0};            
 
     func(A, B, C, m, p, n);
 

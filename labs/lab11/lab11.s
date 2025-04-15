@@ -1,3 +1,12 @@
+/*
+    t0 - address ofset
+    t1 - variavel temporaria generica
+    t2 - variavel temporaria generica
+    t3 - i
+    t4 - j
+    t5 - k
+*/
+
 .section .text
 .global func
 
